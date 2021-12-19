@@ -1,3 +1,6 @@
+@import '../node_modules/font-awesome/scss/font-awesome.scss';
+$fa-font-path: "../node_modules/font-awesome/fonts";
+
 html {
     background: linear-gradient(#fe6d72, #f58545);
     margin: 0;
@@ -29,4 +32,16 @@ body {
 
 body.ajax-page-visible {
 	overflow: hidden
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+	transition: all .3s ease-in-out;
+	background-color: transparent;
+}
+
+ol, ul {
+    padding: 0 0 0 40px;
+    margin: 1em 0;
 }
