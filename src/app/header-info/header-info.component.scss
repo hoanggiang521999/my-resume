@@ -1,16 +1,30 @@
 @media only screen and (min-width:1025px) {
-	.header {
-		display: inline-block;
-		float: left;
-		width: 100%;
-		max-width: 380px;
-		height: 100%;
-		max-height: 80vh;
-		min-height: inherit;
-		text-align: center;
-		padding: 65px 30px 45px;
-		overflow: auto
-	}
+  .header {
+    display: inline-block;
+    float: left;
+    width: 100%;
+    max-width: 380px;
+    height: 100%;
+    max-height: 80vh;
+    min-height: inherit;
+    text-align: center;
+    padding: 65px 30px 45px;
+    overflow: auto;
+  }
+}
+
+.header {
+  &__copyrights {
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 5px 10px 15px;
+    line-height: 14px;
+    font-size: 12px;
+    text-align: center;
+    width: 380px;
+  }
 }
 
 .header-content {
@@ -110,6 +124,6 @@
 
 .header-buttons .btn-primary:hover {
 	background-color: #fff;
-	color: #0ba376;
+	color: #f58545;
 	border-color: #fff
 }
