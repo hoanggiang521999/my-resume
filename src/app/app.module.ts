@@ -12,6 +12,7 @@ import { CommonContentComponent } from './common-content/common-content.componen
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ResumeComponent } from './resume/resume.component';
 import { ContactComponent } from './contact/contact.component';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,8 @@ import { ContactComponent } from './contact/contact.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule,
     RouterModule.forRoot(AppRoutes),
   ],
   providers: [],

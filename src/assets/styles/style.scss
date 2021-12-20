@@ -305,6 +305,11 @@ textarea.form-control:focus {
 	background-color: transparent
 }
 
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+
 .form-group label {
 	position: absolute;
 	top: 10px;
