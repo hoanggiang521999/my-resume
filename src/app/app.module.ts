@@ -9,6 +9,9 @@ import { HeaderInfoComponent } from './header-info/header-info.component';
 import { ArrowsNavComponent } from './arrows-nav/arrows-nav.component';
 import { HomeComponent } from './home/home.component';
 import { CommonContentComponent } from './common-content/common-content.component';
+import { AboutMeComponent } from './about-me/about-me.component';
+import { ResumeComponent } from './resume/resume.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +20,9 @@ import { CommonContentComponent } from './common-content/common-content.componen
     ArrowsNavComponent,
     HomeComponent,
     CommonContentComponent,
+    AboutMeComponent,
+    ResumeComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,

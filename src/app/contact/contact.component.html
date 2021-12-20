@@ -1,0 +1,47 @@
+<section class="animated-section ps ps--theme_default section-active">
+  <div class="section-content">
+    <div class="page-title">
+      <h1>Contact</h1>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-md-4 info-block">
+        <div class="info-block__item" *ngFor="let item of listInfo">
+          <i [class]="item.icon" class="info-block__icon"></i>
+          <h4>{{ item.value }}</h4>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-8">
+        <div class="block-title"><h2>How Can I <span>Help You?</span></h2></div>
+        <form class="contact-form">
+          <div class="controls two-columns">
+            <div class="fields clearfix">
+              <div class="left-column">
+                <div class="form-group form-group-with-icon">
+                  <input type="text" class="form-control">
+                  <label>Full Name</label>
+                </div>
+
+                <div class="form-group form-group-with-icon">
+                  <input type="email" class="form-control">
+                  <label>Email Address</label>
+                </div>
+
+                <div class="form-group form-group-with-icon">
+                  <input type="text" class="form-control"/>
+                  <label>Subject</label>
+                </div>
+              </div>
+              <div class="right-column">
+                <div class="form-group form-group-with-icon">
+                  <textarea id="form_message" name="message" class="form-control" placeholder="" rows="7" required="required" data-error="Please, leave me a message."></textarea>
+                  <label>Message</label>
+                </div>
+              </div>
+            </div>
+            <input type="submit" class="button btn-send disabled" value="Send message">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
