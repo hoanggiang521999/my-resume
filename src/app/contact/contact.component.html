@@ -16,23 +16,23 @@
           <div class="controls two-columns">
             <div class="fields clearfix">
               <div class="left-column">
-                <div class="form-group form-group-with-icon">
+                <div class="form-group form-group-with-icon" [ngClass]="{'form-group-focus': contactForm.get('fullName')?.value}">
                   <input type="text" placeholder="" class="form-control" formControlName="fullName"/>
                   <label>Full Name</label>
                 </div>
 
-                <div class="form-group form-group-with-icon">
+                <div class="form-group form-group-with-icon" [ngClass]="{'form-group-focus': contactForm.get('email')?.value}">
                   <input type="email" placeholder="" class="form-control" formControlName="email" />
                   <label>Email Address</label>
                 </div>
 
-                <div class="form-group form-group-with-icon">
+                <div class="form-group form-group-with-icon" [ngClass]="{'form-group-focus': contactForm.get('subject')?.value}">
                   <input type="text" placeholder="" class="form-control" formControlName="subject" />
                   <label>Subject</label>
                 </div>
               </div>
               <div class="right-column">
-                <div class="form-group form-group-with-icon">
+                <div class="form-group form-group-with-icon" [ngClass]="{'form-group-focus': contactForm.get('message')?.value}">
                   <textarea class="form-control" placeholder="" rows="7" formControlName="message"></textarea>
                   <label>Message</label>
                 </div>
